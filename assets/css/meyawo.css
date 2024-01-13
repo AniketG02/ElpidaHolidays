@@ -13482,3 +13482,27 @@ pre .code {
 .section-lg {
   padding: 100px 0 !important;
 }
+
+/* Custom styles for responsiveness */
+@media (max-width: 767px) {
+  .custom-navbar .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .hamburger-box,
+  .hamburger-inner {
+    background-color: #3330;
+  }
+
+  .header-content {
+    padding: 80px 15px;
+  }
+
+  .map-container {
+    overflow-x: hidden;
+    max-width: 100%;
+    /* Make map container shrink to the full width of the viewport */
+    margin: 0 auto;
+    /* Center the map container */
+  }

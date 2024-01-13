@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Meyawo landing page.">
+    <meta name="author" content="Devcrud">
+    <title>ElpidaHolidays</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + Meyawo main styles -->
+    <link rel="stylesheet" href="assets/css/meyawo.css">
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- Page Navbar -->
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+
+        <a class="logo" href="#">
+            <img src="assets/imgs/Elpida Logo.png " alt="Logo">
+        </a>
+
+        <div class="container">
+            <ul class="nav">
+                <li class="item">
+                    <a class="link" href="#home">Home</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#about">About</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#service">Services</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#blog">Tourists spots</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#contact">Contact</a>
+                </li>
+            </ul>
+            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+                <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                </div>
+            </a>
+        </div>
+    </nav><!-- End of Page Navbar -->
+
+    <!-- Page Header -->
+    <header id="home" class="header">
+        <div class="overlay"></div>
+        <div class="header-content container">
+
+            <!-- Logo -->
+            <div class="logo-container">
+                <img src="/assets/imgs/bird.png" alt="Elpida Holidays Logo">
+            </div>
+
+            <h1 class="header-title">
+                <span class="down">ELPIDA HOLIDAYS</span>
+            </h1>
+            <p class="header-subtitle">Where Memories are Created, not just Booked</p>
+            <p class="header-sub-subtitle"></p>
+
+            <!-- Quote Banner within the header container -->
+            <div id="quote-container" class="text-center mt-3">
+                <!-- Quote content will be displayed here -->
+            </div>
+        </div>
+    </header><!-- End of Page Header -->
+
+    <!-- Script for Quote Banner -->
+    <script>
+        // Your list of quotes
+        const quotes = [
+            "In the tapestry of travel, our accommodations are the vibrant threads that weave unforgettable memories.",
+            "At the heart of every great vacation is a stay with us where relaxation meets adventure, and joy becomes the destination.",
+            "Escape the ordinary, embrace the extraordinary. Your vacation begins with us, creating moments that linger long after check-out.",
+            "Discover the magic of seamless travel experiences, where each stay unfolds a new chapter in your journey of joy.",
+            "Pack your dreams and let your journey unfold. Our accommodations are the starting point of your extraordinary travel tale.",
+            "Unwind in the lap of luxury, as your vacation transforms into a symphony of joy, laughter, and cherished moments.",
+            "Beyond the maps, our stays define the destinations, turning every vacation into a timeless celebration of life.",
+            "Wherever your wanderlust takes you, let our accommodations be the backdrop to your adventure, turning moments into memories.",
+            "Elevate your travel experience with accommodations that embody the spirit of vacation a perfect blend of comfort and excitement.",
+            "Celebrate the art of vacationing with us, where every stay is an ode to the joy of exploring new horizons and creating lasting memories."
+
+        ];
+
+        function displayRandomQuote() {
+            // Get a random quote from the list
+            const randomIndex = Math.floor(Math.random() * quotes.length);
+            const randomQuote = quotes[randomIndex];
+
+            // Display the quote in the banner
+            const quoteContainer = document.getElementById('quote-container');
+            quoteContainer.innerHTML = `<p style="font-size: 18px; color: #ffde59;">"${randomQuote}"</p>`;
+        }
+
+        // Display a random quote initially
+        displayRandomQuote();
+
+        // Set interval to change quote every 10 seconds
+        setInterval(displayRandomQuote, 10000);
+    </script>
+
+
+    <!-- about section -->
+    <section class="section pt-0" id="about">
+        <!-- container -->
+        <div class="container text-center">
+            <!-- about wrapper -->
+            <div class="about">
+                <div class="about-img-holder">
+                    <img src="assets/imgs/man.png" class="about-img"
+                        alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                </div>
+                <div class="about-caption">
+                    <h2 class="section-title-about mb-3">About Us</h2>
+                    <p style="color: #ffde59c7;">
+                        Elpida Holidays is not just a travel company, it's your escape artist, whisking you away to the
+                        breathtaking beauty of Lonavala & Khandala. We believe vacations are more than just
+                        destinations; they're experiences that touch your soul. Whether you crave the grandeur of a
+                        luxury and budgeted hotel, the charm of a cozy resort, or the tranquility of a private villa
+                        nestled amidst the clouds, Elpida Holidays handpicks the perfect haven for your unique style and
+                        budget. Elpida Holidays is not just a booking platform, it's a promise. A promise of
+                        rediscovering yourself, reconnecting with loved ones, and creating memories that echo in your
+                        soul. So, shed the ordinary and embrace the extraordinary. Let Elpida Holidays be your guide to
+                        the magic of Lonavala & Khandala.
+                    </p>
+                </div>
+            </div><!-- end of about wrapper -->
+        </div><!-- end of container -->
+    </section> <!-- end of about section -->
+
+    <!-- service section -->
+    <section class="section" id="service">
+        <div class="container text-center ">
+            <h6 class="section-title mb-6">Our Service</h6>
+            <!-- row -->
+            <div class="row justify-content-center d-flex">
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/hotel-alt-svgrepo-com.svg"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+                                class="icon">
+                            <h6 class="title">Hotels</h6>
+                            <p class="subtitle">Luxurious accommodations with excellent amenities for a comfortable and
+                                memorable stay in prime locations.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/Resort.png"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+                                class="icon">
+                            <h6 class="title">Resorts</h6>
+                            <p class="subtitle"> Escape to paradise with our exclusive resorts, offering relaxation,
+                                recreation, and stunning natural surroundings.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/villa.svg"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+                                class="icon">
+                            <h6 class="title">Villa</h6>
+                            <p class="subtitle"> Experience fun in our private villas, providing a secluded haven
+                                with personalized services and amenities.</p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end of row -->
+
+            <div class="row justify-content-center d-flex">
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/wedding-arch-svgrepo-com.svg"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+                                class="icon">
+                            <h6 class="title">Weddings</h6>
+                            <p class="subtitle">Create lifelong memories with our exquisite wedding venues to
+                                make your special day extraordinary.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/conference-train-guide-talk-svgrepo-com.svg"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+                                class="icon">
+                            <h6 class="title">Conferences</h6>
+                            <p class="subtitle">Great conference spaces for seamless business events,
+                                equipped with modern facilities.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/Events.png"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+                                class="icon">
+                            <h6 class="title">Events</h6>
+                            <p class="subtitle">Host unforgettable events in versatile venues by our
+                                expert event management and organisation services.</p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end of row -->
+
+
+        </div>
+    </section><!-- end of service section -->
+
+
+    <!-- section -->
+    <section class="section-sm bg-primary">
+        <!-- container -->
+        <div class="container text-center text-sm-left">
+            <!-- row -->
+            <div class="row align-items-center">
+                <div class="col-sm text-center mb-md-0">
+                    <h6 class="title text-light" style="font-size: 35px;">Always feel Free to Contact us</h6>
+                </div>
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </section> <!-- end of section -->
+
+    <!-- blog section -->
+    <section class="section" id="blog">
+        <!-- container -->
+        <div class="container text-center">
+            <h6 class="section-title mb-6">Places to visit near Lonavala and Khandala</h6>
+            <!-- blog-wrapper -->
+            <div class="blog-card">
+                <div class="blog-card-header">
+                    <img src="assets/imgs/Bhushi Dam.jpg" class="blog-card-img" alt="Bhushi Dam Picture">
+                </div>
+                <div class="blog-card-body">
+                    <h5 class="blog-card-title">Bhushi Dam</h6>
+                        <p>Bhushi Dam, nestled in the serene hills of Lonavala, offers a tranquil escape with its
+                            gushing water and lush surroundings. A popular spot for picnics, the dam invites visitors to
+                            enjoy the scenic beauty while engaging in water activities and relishing the refreshing
+                            atmosphere.</p>
+                </div>
+            </div><!-- end of blog wrapper -->
+
+            <!-- blog-wrapper -->
+            <div class="blog-card">
+                <div class="blog-card-header">
+                    <img src="assets/imgs/Lion's point.jpg" class="blog-card-img" alt="Lion's point picture">
+                </div>
+                <div class="blog-card-body">
+                    <h5 class="blog-card-title">Lion's Point</h6>
+                        <p>
+                            Providing breathtaking panoramic views of the surrounding valleys and hills, Lion's Point is
+                            a must-visit vantage point in Lonavala. The steep ascent to this viewpoint rewards visitors
+                            with a mesmerizing sight of the landscape, especially during the monsoon when the hills are
+                            adorned with lush greenery and cascading waterfalls.
+                        </p>
+                </div>
+            </div><!-- end of blog wrapper -->
+
+            <!-- blog-wrapper -->
+            <div class="blog-card">
+                <div class="blog-card-header">
+                    <img src="assets/imgs/Sunset point.JPG" class="blog-card-img" alt="Sunset point Picture">
+                </div>
+                <div class="blog-card-body">
+                    <h5 class="blog-card-title">Sunset Point</h6>
+                        <p>A magical spot to witness the sun bid adieu to the day, Sunset Point in Lonavala offers a
+                            spectacular view as the sky transforms into a canvas of vibrant hues. It's a favorite among
+                            tourists and locals alike, providing a serene ambiance to unwind and capture the enchanting
+                            beauty of the setting sun.</p>
+                </div>
+            </div><!-- end of blog wrapper -->
+
+            <!-- blog-wrapper -->
+            <div class="blog-card">
+                <div class="blog-card-header">
+                    <img src="assets/imgs/Narayani dham.jpg" class="blog-card-img" alt="Narayani Dham Picture">
+                </div>
+                <div class="blog-card-body">
+                    <h5 class="blog-card-title">Narayani Dham</h6>
+                        <p>Narayani Dham, a divine retreat in Lonavala, is a spiritual haven adorned with intricately
+                            designed temples and serene surroundings. Devotees and visitors seek solace in this tranquil
+                            abode, where the spiritual atmosphere and architectural beauty create a peaceful sanctuary.
+                        </p>
+                </div>
+            </div><!-- end of blog wrapper -->
+
+            <!-- blog-wrapper -->
+            <div class="blog-card">
+                <div class="blog-card-header">
+                    <img src="assets/imgs/Lohagad Fort.jpg" class="blog-card-img" alt="Lohagad Fort Picture">
+                </div>
+                <div class="blog-card-body">
+                    <h5 class="blog-card-title">Lohagad Fort</h6>
+                        <p>Steeped in history, Lohagad Fort stands as a testament to the region's rich past. The fort's
+                            strategic location atop a hill offers commanding views of the landscape, making it a popular
+                            trekking destination for history enthusiasts and nature lovers alike.</p>
+                </div>
+            </div><!-- end of blog wrapper -->
+
+            <!-- blog-wrapper -->
+            <div class="blog-card">
+                <div class="blog-card-header">
+                    <img src="assets/imgs/Karla Caves.jpg" class="blog-card-img" alt="Karla Caves Picture">
+                </div>
+                <div class="blog-card-body">
+                    <h5 class="blog-card-title">Karla Caves</h6>
+                        <p>Karla Caves, an ancient Buddhist rock-cut complex, showcases intricate carvings and
+                            sculptures dating back to the 2nd century. Nestled amidst greenery, these caves serve as a
+                            fascinating archaeological site and a peaceful retreat for those interested in exploring the
+                            region's cultural heritage.</p>
+                </div>
+            </div><!-- end of blog wrapper -->
+
+            <!-- blog-wrapper -->
+            <div class="blog-card">
+                <div class="blog-card-header">
+                    <img src="assets/imgs/Sunil wax museam.jpg" class="blog-card-img" alt="Sunil's Wax Museum Picture">
+                </div>
+                <div class="blog-card-body">
+                    <h5 class="blog-card-title">Sunil's Wax Museum</h6>
+                        <p>Sunil's Wax Museum in Lonavala brings a touch of glamour with its lifelike wax statues of
+                            celebrities and historical figures. A unique attraction for art and pop culture enthusiasts,
+                            the museum provides an opportunity to get up close and personal with iconic personalities.
+                        </p>
+                </div>
+            </div><!-- end of blog wrapper -->
+
+            <!-- blog-wrapper -->
+            <div class="blog-card">
+                <div class="blog-card-header">
+                    <img src="assets/imgs/mapro.jpg" class="blog-card-img" alt="Mapro Garden Picture">
+                </div>
+                <div class="blog-card-body">
+                    <h5 class="blog-card-title">Mapro Garden</h6>
+                        <p>A paradise for fruit lovers, Mapro Garden is renowned for its strawberry products and lush
+                            strawberry fields. Visitors can explore the scenic garden, indulge in delicious treats, and
+                            purchase a variety of fruit-based products, making it a delightful stop for food
+                            connoisseurs.</p>
+                </div>
+            </div><!-- end of blog wrapper -->
+
+            <!-- blog-wrapper -->
+            <div class="blog-card">
+                <div class="blog-card-header">
+                    <img src="assets/imgs/pawna.jpg" class="blog-card-img" alt="Pawana Lake Picture">
+                </div>
+                <div class="blog-card-body">
+                    <h5 class="blog-card-title">Pawana Lake</h5>
+                    <p>Nestled amidst Sahyadri hills, Pawana Lake enchants with its serene waters and panoramic views.
+                        Ideal for camping, the lakeside offers a tranquil escape, where visitors can immerse themselves
+                        in nature's beauty and witness stunning sunrises and sunsets. Adventure seekers can indulge in
+                        water sports like boating and kayaking, while history enthusiasts can explore nearby forts like
+                        Lohagad, adding a touch of heritage to this picturesque destination.</p>
+                </div>
+            </div><!-- end of blog wrapper -->
+
+        </div><!-- end of container -->
+    </section><!-- end of blog section -->
+
+    <!-- contact section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="row">
+                <!-- Contact Form -->
+                <div class="col-md-6">
+                    <h6 class="section-title mb-5">Contact Me</h6>
+                    <form action="" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group col-sm-6">
+                                <input type="text" size="50" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <input type="tel" class="form-control" placeholder="Your Phone Number" required>
+                            </div>
+                            <div class="form-group col-sm-12">
+                                <input type="email" class="form-control" placeholder="Enter Email" required>
+                            </div>
+                            <div class="form-group col-sm-12">
+                                <textarea name="comment" id="comment" rows="6" class="form-control"
+                                    placeholder="Write Something"></textarea>
+                            </div>
+                            <div class="form-group col-sm-12 mt-3">
+                                <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- Map -->
+                <div class="col-md-6">
+                    <div class="map-container">
+                        <!-- Replace 'YOUR_MAP_EMBED_CODE' with the actual embed code from your map provider -->
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15111.267548997586!2d73.4023158!3d18.7617145!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be8011c43bb14f5%3A0x4384e4c4da591328!2sKhot%20Villas!5e0!3m2!1sen!2sin!4v1705138203384!5m2!1sen!2sin"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="special">
+
+        <!-- footer -->
+        <div class="container">
+            <footer class="footer">
+                <p class="mb-0">Copyright
+                    <script>document.write(new Date().getFullYear())</script> &copy; <a
+                        href="http://www.elpidaholidays.con">ElpidaHolidays</a>
+                </p>
+                <div class="social-links text-right m-auto ml-sm-auto">
+                    <a href="javascript:void(0)" class="link" target="_blank"><i class="ti-facebook"></i></a>
+                    <a href="javascript:void(0)" class="link" target="_blank"><i class="ti-twitter-alt"></i></a>
+                    <a href="javascript:void(0)" class="link" target="_blank"><i class="ti-email"></i></a>
+                    <a href="https://www.instagram.com/elpida.holidays?igsh=ZTFiaW40bzVrNnY1" class="link"
+                        target="_blank"><i class="ti-instagram"></i></a>
+                    <a href="https://wa.me/+919960103520" class="link" target="_blank"><i
+                            class="ti-comment-alt"></i></a>
+                </div>
+            </footer>
+        </div> <!-- end of page footer -->
+    </section>
+
+    <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Meyawo js -->
+    <script src="assets/js/meyawo.js"></script>
+
+</body>
+
+</html>

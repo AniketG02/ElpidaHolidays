@@ -13394,6 +13394,7 @@ pre .code {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+  justify-content: center;
   height: 100vh;
   -webkit-box-align: center;
   -webkit-align-items: center;

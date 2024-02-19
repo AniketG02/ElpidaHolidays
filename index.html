@@ -67,12 +67,22 @@
 
             // Add click event listener to each navbar link
             navbarLinks.forEach(link => {
-                link.addEventListener('click', () => {
+                link.addEventListener('click', (event) => {
+                    // Prevent the default action
+                    event.preventDefault();
+
                     // Remove the "show" class from the navbar collapse element
                     navbarCollapse.classList.remove('show');
 
                     // Reset the state of the hamburger icon
                     navToggle.classList.remove('is-active');
+
+                    // Scroll to the target section smoothly
+                    const target = document.querySelector(event.target.getAttribute('href'));
+                    window.scrollTo({
+                        top: target.offsetTop,
+                        behavior: 'smooth'
+                    });
                 });
             });
         </script>

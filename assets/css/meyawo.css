@@ -2431,7 +2431,7 @@ pre code {
   font-weight: 400;
   line-height: 1.5;
   color: #495057;
-  background-color: #ffe57d;
+  background-color: #c58a59;
   background-clip: padding-box;
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
@@ -7689,7 +7689,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #ffde59c7 !important;
+  background-color: #c58a59 !important;
 }
 
 a.bg-primary:hover,
@@ -12204,7 +12204,7 @@ a.text-dark:focus {
 h2 {
   font-weight: 500;
   font-family: 'Baloo Paaji', cursive;
-  color: #ffde59;
+  color: #002541;
 }
 
 h5 {
@@ -12277,7 +12277,7 @@ p {
 }
 
 .service-card {
-  background-color: rgba(255, 222, 89, 0.9);
+  background-color: #c58a59;
   /* Adjust the alpha value (0.7) to make it more or less faint */
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -12575,7 +12575,7 @@ p {
 }
 
 .blog-card-body {
-  background-color: rgba(230 201 85);
+  background-color: #c58a59;
   /* Adjust the alpha value (0.7) to make it more or less faint */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   /* Adjust the shadow as needed */
@@ -12859,7 +12859,7 @@ pre .code {
 }
 
 .custom-navbar .nav .item .link {
-  color: #ffde59;
+  color: #002541;
   font-weight: 500;
   text-decoration: none;
 }
@@ -13257,7 +13257,7 @@ pre .code {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #02025959;
+  background-color: #c58a59;
   padding: 10px;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -13336,7 +13336,7 @@ pre .code {
 }
 
 .header .header-content .header-subtitle {
-  color: #ffde59;
+  color: #002541;
   font-size: calc(10px + (22 - 10) * ((100vw - 300px) / (1300 - 300)));
   opacity: .8;
   margin-top: -10px;
@@ -13355,7 +13355,7 @@ pre .code {
   font-size: 2.4rem;
   font-weight: bold;
   opacity: .8;
-  color: #ffde59;
+  color: #002541;
 }
 
 .header-mini {
@@ -13462,7 +13462,7 @@ pre .code {
 }
 
 .section-title {
-  color: #ffde59;
+  color: #002541;
   /* Specific color for the special h6 title */
   font-size: calc(20px + (35 - 20) * ((100vw - 300px) / (1300 - 300)));
 }

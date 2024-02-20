@@ -13337,7 +13337,7 @@ pre .code {
 
 .header .header-content .header-subtitle {
   color: #002541;
-  font-size: calc(10px + (22 - 10) * ((100vw - 300px) / (1300 - 300)));
+  font-size: calc(12px + (24 - 12) * ((100vw - 300px) / (1300 - 300)));
   opacity: .8;
   margin-top: -10px;
   margin-bottom: 20px;

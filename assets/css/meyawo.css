@@ -2431,7 +2431,7 @@ pre code {
   font-weight: 400;
   line-height: 1.5;
   color: #495057;
-  background-color: #c58a59;
+  background-color: #f4b593;
   background-clip: padding-box;
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
@@ -7689,7 +7689,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #c58a59 !important;
+  background-color: #f4b593 !important;
 }
 
 a.bg-primary:hover,
@@ -12277,7 +12277,7 @@ p {
 }
 
 .service-card {
-  background-color: #c58a59;
+  background-color: #f4b953;
   /* Adjust the alpha value (0.7) to make it more or less faint */
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -12575,7 +12575,7 @@ p {
 }
 
 .blog-card-body {
-  background-color: #c58a59;
+  background-color: #f4b953;
   /* Adjust the alpha value (0.7) to make it more or less faint */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   /* Adjust the shadow as needed */
@@ -13257,7 +13257,7 @@ pre .code {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #c58a59;
+  background-color: #f4b593;
   padding: 10px;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);

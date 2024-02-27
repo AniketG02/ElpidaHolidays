@@ -59,17 +59,13 @@
 
         <script>
             function redirectHome() {
-                window.location.href = 'http://www.elpidaholidays.com#home';
-            }
-            // Add similar functions for other links
-            $(document).ready(function () {
-                $('a.link').click(function (event) {
-                    event.preventDefault();
+                window.location.href = 'http://www.elpidaholidays.com';
+                $(document).ready(function () {
                     $('html, body').animate({
-                        scrollTop: $($.attr(this, 'href')).offset().top
+                        scrollTop: $('#home').offset().top
                     }, 500);
                 });
-            });
+            }
         </script>
 
     </nav><!-- End of Page Navbar -->

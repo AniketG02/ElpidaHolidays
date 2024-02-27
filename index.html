@@ -16,6 +16,7 @@
         window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
     </script>
     <script defer src="/_vercel/insights/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
 
@@ -56,29 +57,43 @@
         </div>
 
         <script>
+            // Get the navbar collapse element
             const navbarCollapse = document.getElementById('navbarCollapse');
+
+            // Get the hamburger icon element
             const navToggle = document.getElementById('nav-toggle');
+
+            // Get all the navbar links
             const navbarLinks = document.querySelectorAll('.nav .link');
-        
+
+            // Add click event listener to each navbar link
             navbarLinks.forEach(link => {
                 link.addEventListener('click', (event) => {
+                    // Prevent the default action
                     event.preventDefault();
+
+                    // Remove the "show" class from the navbar collapse element
                     navbarCollapse.classList.remove('show');
+
+                    // Reset the state of the hamburger icon
                     navToggle.classList.remove('is-active');
+
+                    // Get the href attribute of the clicked link
                     const href = event.target.getAttribute('href');
-        
+
+                    // Check if the clicked link has the id "our-properties-link"
                     if (event.target.id === 'our-properties-link') {
+                        // Navigate to the desired URL
                         window.location.href = href;
                     } else {
-                        const target = document.querySelector(href);
-                        const top = window.pageYOffset + target.getBoundingClientRect().top;
-                        window.scroll({
-                            top: top,
-                            behavior: 'smooth'
-                        });
+                        // Scroll to the target section smoothly using jQuery
+                        $('html, body').animate({
+                            scrollTop: $(href).offset().top
+                        }, 500);
                     }
                 });
             });
+
         </script>
     </nav><!-- End of Page Navbar -->
     <!-- Page Header -->

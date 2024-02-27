@@ -30,7 +30,7 @@
         <div class="container">
             <ul class="nav" id="navbarCollapse">
                 <li class="item">
-                    <a class="link" href="www.elpidaholidays.com">Home</a>
+                    <a class="link" href="#home" onclick="redirectHome()">Home</a>
                 </li>
                 <li class="item">
                     <a class="link" href="#about">About Us</a>
@@ -55,6 +55,12 @@
             </a>
         </div>
 
+        <script>
+            function redirectHome() {
+                window.location.href = 'http://www.elpidaholidays.com#home';
+            }
+            // Add similar functions for other links
+        </script>
        
     </nav><!-- End of Page Navbar -->
     <!-- Page Header -->

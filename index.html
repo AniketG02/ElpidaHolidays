@@ -39,7 +39,7 @@
                     <a class="link" href="#service">Our Services</a>
                 </li>
                 <li class="item">
-                    <a class="link" href="Our_Properties.html">Our Properties</a>
+                    <a class="link" href="#our-properties" id="our-properties-link">Our Properties</a>
                 </li>
                 <li class="item">
                     <a class="link" href="#blog">Things to explore</a>
@@ -77,12 +77,21 @@
                     // Reset the state of the hamburger icon
                     navToggle.classList.remove('is-active');
 
-                    // Scroll to the target section smoothly
-                    const target = document.querySelector(event.target.getAttribute('href'));
-                    window.scrollTo({
-                        top: target.offsetTop,
-                        behavior: 'smooth'
-                    });
+                    // Get the href attribute of the clicked link
+                    const href = event.target.getAttribute('href');
+
+                    // Check if the clicked link has the id "our-properties-link"
+                    if (event.target.id === 'our-properties-link') {
+                        // Navigate to the desired URL
+                        window.location.href = href;
+                    } else {
+                        // Scroll to the target section smoothly
+                        const target = document.querySelector(href);
+                        window.scrollTo({
+                            top: target.offsetTop,
+                            behavior: 'smooth'
+                        });
+                    }
                 });
             });
         </script>
@@ -279,155 +288,154 @@
         <!-- container -->
         <div class="container text-center">
             <h6 class="section-title mb-6">Places to visit near Lonavala and Khandala</h6>
-                <!-- blog-wrapper -->
-                <div class="blog-card">
-                    <div class="blog-card-header">
-                        <img src="assets/imgs/Bhushi Dam.jpg" class="blog-card-img" alt="Bhushi Dam Picture">
-                    </div>
-                    <div class="blog-card-body">
-                        <h5 class="blog-card-title">Bhushi Dam</h6>
-                            <p>Bhushi Dam, nestled in the serene hills of Lonavala, offers a tranquil escape with its
-                                gushing water and lush surroundings. A popular spot for picnics, the dam invites
-                                visitors to
-                                enjoy the scenic beauty while engaging in water activities and relishing the refreshing
-                                atmosphere.</p>
-                    </div>
-                </div><!-- end of blog wrapper -->
+            <!-- blog-wrapper -->
+            <div class="blog-card">
+                <div class="blog-card-header">
+                    <img src="assets/imgs/Bhushi Dam.jpg" class="blog-card-img" alt="Bhushi Dam Picture">
+                </div>
+                <div class="blog-card-body">
+                    <h5 class="blog-card-title">Bhushi Dam</h6>
+                        <p>Bhushi Dam, nestled in the serene hills of Lonavala, offers a tranquil escape with its
+                            gushing water and lush surroundings. A popular spot for picnics, the dam invites
+                            visitors to
+                            enjoy the scenic beauty while engaging in water activities and relishing the refreshing
+                            atmosphere.</p>
+                </div>
+            </div><!-- end of blog wrapper -->
 
-                <!-- blog-wrapper -->
-                <div class="blog-card">
-                    <div class="blog-card-header">
-                        <img src="assets/imgs/Lion's point.jpg" class="blog-card-img" alt="Lion's point picture">
-                    </div>
-                    <div class="blog-card-body">
-                        <h5 class="blog-card-title">Lion's Point</h6>
-                            <p>
-                                Providing breathtaking panoramic views of the surrounding valleys and hills, Lion's
-                                Point is
-                                a must-visit vantage point in Lonavala. The steep ascent to this viewpoint rewards
-                                visitors
-                                with a mesmerizing sight of the landscape, especially during the monsoon when the hills
-                                are
-                                adorned with lush greenery and cascading waterfalls.
-                            </p>
-                    </div>
-                </div><!-- end of blog wrapper -->
+            <!-- blog-wrapper -->
+            <div class="blog-card">
+                <div class="blog-card-header">
+                    <img src="assets/imgs/Lion's point.jpg" class="blog-card-img" alt="Lion's point picture">
+                </div>
+                <div class="blog-card-body">
+                    <h5 class="blog-card-title">Lion's Point</h6>
+                        <p>
+                            Providing breathtaking panoramic views of the surrounding valleys and hills, Lion's
+                            Point is
+                            a must-visit vantage point in Lonavala. The steep ascent to this viewpoint rewards
+                            visitors
+                            with a mesmerizing sight of the landscape, especially during the monsoon when the hills
+                            are
+                            adorned with lush greenery and cascading waterfalls.
+                        </p>
+                </div>
+            </div><!-- end of blog wrapper -->
 
-                <!-- blog-wrapper -->
-                <div class="blog-card">
-                    <div class="blog-card-header">
-                        <img src="assets/imgs/Sunset point.JPG" class="blog-card-img" alt="Sunset point Picture">
-                    </div>
-                    <div class="blog-card-body">
-                        <h5 class="blog-card-title">Sunset Point</h6>
-                            <p>A magical spot to witness the sun bid adieu to the day, Sunset Point in Lonavala offers a
-                                spectacular view as the sky transforms into a canvas of vibrant hues. It's a favorite
-                                among
-                                tourists and locals alike, providing a serene ambiance to unwind and capture the
-                                enchanting
-                                beauty of the setting sun.</p>
-                    </div>
-                </div><!-- end of blog wrapper -->
+            <!-- blog-wrapper -->
+            <div class="blog-card">
+                <div class="blog-card-header">
+                    <img src="assets/imgs/Sunset point.JPG" class="blog-card-img" alt="Sunset point Picture">
+                </div>
+                <div class="blog-card-body">
+                    <h5 class="blog-card-title">Sunset Point</h6>
+                        <p>A magical spot to witness the sun bid adieu to the day, Sunset Point in Lonavala offers a
+                            spectacular view as the sky transforms into a canvas of vibrant hues. It's a favorite
+                            among
+                            tourists and locals alike, providing a serene ambiance to unwind and capture the
+                            enchanting
+                            beauty of the setting sun.</p>
+                </div>
+            </div><!-- end of blog wrapper -->
 
-                <!-- blog-wrapper -->
-                <div class="blog-card">
-                    <div class="blog-card-header">
-                        <img src="assets/imgs/Narayani dham.jpg" class="blog-card-img" alt="Narayani Dham Picture">
-                    </div>
-                    <div class="blog-card-body">
-                        <h5 class="blog-card-title">Narayani Dham</h6>
-                            <p>Narayani Dham, a divine retreat in Lonavala, is a spiritual haven adorned with
-                                intricately
-                                designed temples and serene surroundings. Devotees and visitors seek solace in this
-                                tranquil
-                                abode, where the spiritual atmosphere and architectural beauty create a peaceful
-                                sanctuary.
-                            </p>
-                    </div>
-                </div><!-- end of blog wrapper -->
+            <!-- blog-wrapper -->
+            <div class="blog-card">
+                <div class="blog-card-header">
+                    <img src="assets/imgs/Narayani dham.jpg" class="blog-card-img" alt="Narayani Dham Picture">
+                </div>
+                <div class="blog-card-body">
+                    <h5 class="blog-card-title">Narayani Dham</h6>
+                        <p>Narayani Dham, a divine retreat in Lonavala, is a spiritual haven adorned with
+                            intricately
+                            designed temples and serene surroundings. Devotees and visitors seek solace in this
+                            tranquil
+                            abode, where the spiritual atmosphere and architectural beauty create a peaceful
+                            sanctuary.
+                        </p>
+                </div>
+            </div><!-- end of blog wrapper -->
 
-                <!-- blog-wrapper -->
-                <div class="blog-card">
-                    <div class="blog-card-header">
-                        <img src="assets/imgs/Lohagad Fort.jpg" class="blog-card-img" alt="Lohagad Fort Picture">
-                    </div>
-                    <div class="blog-card-body">
-                        <h5 class="blog-card-title">Lohagad Fort</h6>
-                            <p>Steeped in history, Lohagad Fort stands as a testament to the region's rich past. The
-                                fort's
-                                strategic location atop a hill offers commanding views of the landscape, making it a
-                                popular
-                                trekking destination for history enthusiasts and nature lovers alike.</p>
-                    </div>
-                </div><!-- end of blog wrapper -->
+            <!-- blog-wrapper -->
+            <div class="blog-card">
+                <div class="blog-card-header">
+                    <img src="assets/imgs/Lohagad Fort.jpg" class="blog-card-img" alt="Lohagad Fort Picture">
+                </div>
+                <div class="blog-card-body">
+                    <h5 class="blog-card-title">Lohagad Fort</h6>
+                        <p>Steeped in history, Lohagad Fort stands as a testament to the region's rich past. The
+                            fort's
+                            strategic location atop a hill offers commanding views of the landscape, making it a
+                            popular
+                            trekking destination for history enthusiasts and nature lovers alike.</p>
+                </div>
+            </div><!-- end of blog wrapper -->
 
-                <!-- blog-wrapper -->
-                <div class="blog-card">
-                    <div class="blog-card-header">
-                        <img src="assets/imgs/Karla Caves.jpg" class="blog-card-img" alt="Karla Caves Picture">
-                    </div>
-                    <div class="blog-card-body">
-                        <h5 class="blog-card-title">Karla Caves</h6>
-                            <p>Karla Caves, an ancient Buddhist rock-cut complex, showcases intricate carvings and
-                                sculptures dating back to the 2nd century. Nestled amidst greenery, these caves serve as
-                                a
-                                fascinating archaeological site and a peaceful retreat for those interested in exploring
-                                the
-                                region's cultural heritage.</p>
-                    </div>
-                </div><!-- end of blog wrapper -->
+            <!-- blog-wrapper -->
+            <div class="blog-card">
+                <div class="blog-card-header">
+                    <img src="assets/imgs/Karla Caves.jpg" class="blog-card-img" alt="Karla Caves Picture">
+                </div>
+                <div class="blog-card-body">
+                    <h5 class="blog-card-title">Karla Caves</h6>
+                        <p>Karla Caves, an ancient Buddhist rock-cut complex, showcases intricate carvings and
+                            sculptures dating back to the 2nd century. Nestled amidst greenery, these caves serve as
+                            a
+                            fascinating archaeological site and a peaceful retreat for those interested in exploring
+                            the
+                            region's cultural heritage.</p>
+                </div>
+            </div><!-- end of blog wrapper -->
 
-                <!-- blog-wrapper -->
-                <div class="blog-card">
-                    <div class="blog-card-header">
-                        <img src="assets/imgs/Sunil wax museam.jpg" class="blog-card-img"
-                            alt="Sunil's Wax Museum Picture">
-                    </div>
-                    <div class="blog-card-body">
-                        <h5 class="blog-card-title">Sunil's Wax Museum</h6>
-                            <p>Sunil's Wax Museum in Lonavala brings a touch of glamour with its lifelike wax statues of
-                                celebrities and historical figures. A unique attraction for art and pop culture
-                                enthusiasts,
-                                the museum provides an opportunity to get up close and personal with iconic
-                                personalities.
-                            </p>
-                    </div>
-                </div><!-- end of blog wrapper -->
+            <!-- blog-wrapper -->
+            <div class="blog-card">
+                <div class="blog-card-header">
+                    <img src="assets/imgs/Sunil wax museam.jpg" class="blog-card-img" alt="Sunil's Wax Museum Picture">
+                </div>
+                <div class="blog-card-body">
+                    <h5 class="blog-card-title">Sunil's Wax Museum</h6>
+                        <p>Sunil's Wax Museum in Lonavala brings a touch of glamour with its lifelike wax statues of
+                            celebrities and historical figures. A unique attraction for art and pop culture
+                            enthusiasts,
+                            the museum provides an opportunity to get up close and personal with iconic
+                            personalities.
+                        </p>
+                </div>
+            </div><!-- end of blog wrapper -->
 
-                <!-- blog-wrapper -->
-                <div class="blog-card">
-                    <div class="blog-card-header">
-                        <img src="assets/imgs/mapro.jpg" class="blog-card-img" alt="Mapro Garden Picture">
-                    </div>
-                    <div class="blog-card-body">
-                        <h5 class="blog-card-title">Mapro Garden</h6>
-                            <p>A paradise for fruit lovers, Mapro Garden is renowned for its strawberry products and
-                                lush
-                                strawberry fields. Visitors can explore the scenic garden, indulge in delicious treats,
-                                and
-                                purchase a variety of fruit-based products, making it a delightful stop for food
-                                connoisseurs.</p>
-                    </div>
-                </div><!-- end of blog wrapper -->
+            <!-- blog-wrapper -->
+            <div class="blog-card">
+                <div class="blog-card-header">
+                    <img src="assets/imgs/mapro.jpg" class="blog-card-img" alt="Mapro Garden Picture">
+                </div>
+                <div class="blog-card-body">
+                    <h5 class="blog-card-title">Mapro Garden</h6>
+                        <p>A paradise for fruit lovers, Mapro Garden is renowned for its strawberry products and
+                            lush
+                            strawberry fields. Visitors can explore the scenic garden, indulge in delicious treats,
+                            and
+                            purchase a variety of fruit-based products, making it a delightful stop for food
+                            connoisseurs.</p>
+                </div>
+            </div><!-- end of blog wrapper -->
 
-                <!-- blog-wrapper -->
-                <div class="blog-card">
-                    <div class="blog-card-header">
-                        <img src="assets/imgs/pawna.jpg" class="blog-card-img" alt="Pawana Lake Picture">
-                    </div>
-                    <div class="blog-card-body">
-                        <h5 class="blog-card-title">Pawana Lake</h5>
-                        <p>Nestled amidst Sahyadri hills, Pawana Lake enchants with its serene waters and panoramic
-                            views.
-                            Ideal for camping, the lakeside offers a tranquil escape, where visitors can immerse
-                            themselves
-                            in nature's beauty and witness stunning sunrises and sunsets. Adventure seekers can indulge
-                            in
-                            water sports like boating and kayaking, while history enthusiasts can explore nearby forts
-                            like
-                            Lohagad, adding a touch of heritage to this picturesque destination.</p>
-                    </div>
-                </div><!-- end of blog wrapper -->
+            <!-- blog-wrapper -->
+            <div class="blog-card">
+                <div class="blog-card-header">
+                    <img src="assets/imgs/pawna.jpg" class="blog-card-img" alt="Pawana Lake Picture">
+                </div>
+                <div class="blog-card-body">
+                    <h5 class="blog-card-title">Pawana Lake</h5>
+                    <p>Nestled amidst Sahyadri hills, Pawana Lake enchants with its serene waters and panoramic
+                        views.
+                        Ideal for camping, the lakeside offers a tranquil escape, where visitors can immerse
+                        themselves
+                        in nature's beauty and witness stunning sunrises and sunsets. Adventure seekers can indulge
+                        in
+                        water sports like boating and kayaking, while history enthusiasts can explore nearby forts
+                        like
+                        Lohagad, adding a touch of heritage to this picturesque destination.</p>
+                </div>
+            </div><!-- end of blog wrapper -->
         </div><!-- end of container -->
     </section><!-- end of blog section -->
 

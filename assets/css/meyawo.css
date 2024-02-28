@@ -290,6 +290,7 @@ button,
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button;
+  appearance: button;
 }
 
 button:not(:disabled),
@@ -318,6 +319,7 @@ input[type="time"],
 input[type="datetime-local"],
 input[type="month"] {
   -webkit-appearance: listbox;
+  appearance: listbox;
 }
 
 textarea {
@@ -356,6 +358,7 @@ progress {
 [type="search"] {
   outline-offset: -2px;
   -webkit-appearance: none;
+  appearance: none;
 }
 
 [type="search"]::-webkit-search-decoration {
@@ -13284,14 +13287,14 @@ pre .code {
 }
 
 .close {
-  color: #ffde59;
+  color: #000;
   /* Adjust the close button color */
 }
 
 .modal-body {
-  color: #ffde59;
+  color: #000;
   /* Adjust the text color */
-  background: rgba(0, 0, 0, 0.6);
+  background: #f4b953;
   /* Set a background color for the modal body */
 }
 
@@ -13509,3 +13512,74 @@ pre .code {
     /* Center the map container */
   }
 }
+
+.hotel {
+  padding-top: 90px;
+  background-image: url(../imgs/header.jpg);
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.flex-item {
+  flex-basis: calc(50% - 20px);
+  /* 2 items per row, 20px for margin */
+  margin: 10px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.extra-info {
+  display: none;
+}
+
+.flex-item {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* Add shadows */
+  border-radius: 5px;
+  /* Add rounded corners for a slight bevel effect */
+  margin: 10px;
+  /* Add some margin between the tiles */
+  transition: 0.3s;
+  /* Add transition for hover effect */
+  background-color: #f4b953;
+}
+
+/* On mouse-over, add a deeper shadow */
+.flex-item:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+}
+
+.flex-item img {
+  padding: 20px; /* This applies the same padding to top, bottom, left, and right */
+  object-fit: cover; /* This ensures the image covers the entire content box */
+  width: 100%; /* This makes the image take up the full width of its container */
+  height: auto; /* This allows the height to adjust automatically to maintain aspect ratio */
+  aspect-ratio: 300 / 200; /* This sets the aspect ratio to 600x450 */
+}
+
+.modal-content {
+  background-image: url(//assets/imgs/header.jpg);
+  background-size: cover;
+}
+
+
+#modalImage {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.modal-header {
+  background-color: #F7D3AF; /* Change this to your desired color */
+}
+
+.modal-footer {
+  background-color: #F7D3AF; /* Change this to your desired color */
+}
+
+

@@ -76,7 +76,10 @@
             function showModal(hotelName, imageUrl, description, noOfRooms, noOfHalls, facilities) {
                 $('#modalTitle').text(hotelName);
                 $('#modalImage').attr('src', imageUrl);
-                $('#modalInfo').html('<li>Description: ' + description + '</li><li>No of Rooms: ' + noOfRooms + '</li><li>No of Halls: ' + noOfHalls + '</li><li>Facilities: ' + facilities + '</li>');
+                var facilitiesList = facilities.map(function (facility) {
+                    return '<li>' + facility + '</li>';
+                }).join('');
+                $('#modalInfo').html('<br>' + description + '<br><br>' + '</div><li><strong>No of Rooms:</strong> ' + noOfRooms + '</li><li><strong>No of Halls:</strong> ' + noOfHalls + '</li><li><strong>Facilities:</strong> <ul>' + facilitiesList + '</ul></li>');
                 $('#myModal').modal('show');
             }
         </script>
@@ -87,39 +90,39 @@
         <div class="flex-container">
 
             <div class="flex-item">
-                <img src="https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=600"
-                    alt="Hotel 1">
-                <h2>Hotel 1</h2>
+                <img src="https://r1imghtlak.mmtcdn.com/759b0bba293811e980410242ac110003.jpeg?&output-quality=75&downsize=910:612&crop=910:612;3,0&output-format=jpg"
+                    alt="Basilica Holiday Home">
+                <h2>Basilica Holiday Home</h2>
                 <button type="button" class="btn" data-toggle="modal" data-target="#myModal"
-                    onclick="showModal('Hotel 1', 'https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=600', 'This is hotel 1', '10', '2', 'everything is there')">More
+                    onclick="showModal('Basilica Holiday Home', 'https://r1imghtlak.mmtcdn.com/759b0bba293811e980410242ac110003.jpeg?&output-quality=75&downsize=910:612&crop=910:612;3,0&output-format=jpg', 'Basilica Holiday Home in Lonavala offers serene accommodations nestled amidst nature, providing tranquility and comfort for a memorable getaway experience.', '46', '3(maximum capacity - 400 in theator)', ['Spacious Rooms', 'Swimming Pool', 'Lawn for wedding and events', 'Ample car parking', 'Restaurant'])">More
                     Info</button>
             </div>
 
             <div class="flex-item">
-                <img src="https://img.freepik.com/premium-photo/minsk-belarus-august-2017-columns-guestroom-hall-reception-modern-luxury-hotel_97694-6572.jpg"
-                    alt="Hotel 2">
-                <h2>Hotel 2</h2>
+                <img src="https://lh3.googleusercontent.com/p/AF1QipPLTbUke2GQp9F8Ad-vxAXUvPPHpqBm_9CXzS6I=s1360-w1360-h1020"
+                    alt="Ellegance Hill Resort">
+                <h2>Ellegance Hill Resort</h2>
                 <button type="button" class="btn" data-toggle="modal" data-target="#myModal"
-                    onclick="showModal('Hotel 1', 'https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=600', 'This is hotel 2', '11', '3', 'All necessary things')">More
-                    Info</button>
+                onclick="showModal('Ellegance Hill Resort', 'https://lh3.googleusercontent.com/p/AF1QipPLTbUke2GQp9F8Ad-vxAXUvPPHpqBm_9CXzS6I=s1360-w1360-h1020', 'Ellegance Hill Resort in Lonavala offers tranquil luxury amidst nature, featuring scenic views, comfortable accommodations, and premium amenities for a rejuvenating retreat.', '30', '2(maximum capacity - 150 in theator)', ['Restaurant','Swimming Pool', 'Well Equiped Rooms', 'Indoor Games','Children Play Area','Ample car parking','Lawn for wedding (Upto 600 packs)'])">More
+                Info</button>
             </div>
 
             <div class="flex-item">
-                <img src="https://t3.ftcdn.net/jpg/00/29/13/38/360_F_29133877_bfA2n7cWV53fto2BomyZ6pyRujJTBwjd.jpg"
-                    alt="Hotel 3">
-                <h2>Hotel 3</h2>
+                <img src="https://lh3.googleusercontent.com/p/AF1QipP2ketOaRZqAopADX_TkeWSvDH-fvej55WGGLfY=s1360-w1360-h1020"
+                    alt="Velvet County">
+                <h2>Velvet County</h2>
                 <button type="button" class="btn" data-toggle="modal" data-target="#myModal"
-                    onclick="showModal('Hotel 1', 'https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=600', 'This is hotel 3', '9', '9', 'All the things')">More
-                    Info</button>
+                onclick="showModal('Velvet County', 'https://lh3.googleusercontent.com/p/AF1QipP2ketOaRZqAopADX_TkeWSvDH-fvej55WGGLfY=s1360-w1360-h1020', 'Velvet County, Lonavala, offers serene landscapes, luxurious amenities, and a tranquil ambiance, perfect for a rejuvenating retreat amidst the lush greenery.', '32', '2(maximum capacity - 150 in theator)', ['Well Equiped Rooms','Swimming Pool','Indoor Games', 'Children Play Area', 'Restaurant','Ample car parking'])">More
+                Info</button>
             </div>
 
             <div class="flex-item">
-                <img src="https://media.istockphoto.com/id/104731717/photo/luxury-resort.jpg?s=612x612&w=0&k=20&c=cODMSPbYyrn1FHake1xYz9M8r15iOfGz9Aosy9Db7mI="
-                    alt="Hotel 4">
-                <h2>Hotel 4</h2>
+                <img src="https://gos3.ibcdn.com/fef0742061b111ee81e10a58a9feac02.jpg"
+                    alt="Shree Sukhsagar Resort">
+                <h2>Shree Sukhsagar Resort</h2>
                 <button type="button" class="btn" data-toggle="modal" data-target="#myModal"
-                    onclick="showModal('Hotel 1', 'https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=600', 'This is hotel 4', '10', '3', 'every')">More
-                    Info</button>
+                onclick="showModal('Hotel 1', 'https://gos3.ibcdn.com/fef0742061b111ee81e10a58a9feac02.jpg', 'Shree Sukhsagar Resort Lonavala offers serene accommodations amidst nature, featuring scenic views, modern amenities, and tranquil ambiance for a rejuvenating retreat.', '43', '5(maximum capacity - 150 in theator', ['Spacious Rooms','Restaurant', 'Children Play Area', 'Swimming Pool','Ample Car parking'])">More
+                Info</button>
             </div>
 
             <div class="modal fade" id="myModal">
@@ -131,7 +134,7 @@
                         </div>
                         <div class="modal-body">
                             <img id="modalImage" src="hotel-image.jpg" alt="Hotel Image" style="display: block;">
-                            <ul id="modalInfo">
+                            <ul id="modalInfo" class="center-text">
                             </ul>
                         </div>
                         <div class="modal-footer">

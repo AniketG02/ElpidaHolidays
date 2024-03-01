@@ -13514,7 +13514,7 @@ pre .code {
 }
 
 .hotel {
-  padding-top: 90px;
+  padding-top: 8px;
   background-image: url(../imgs/header.jpg);
 }
 
@@ -13623,3 +13623,19 @@ pre .code {
  opacity: 0;
 }
 
+.special-h {
+  color: #002541;
+  margin-top: 95px;
+  text-align: center;
+  box-shadow: 0px 0px 10px 2px #f4b953b5; /* Adjust this value to get the desired shadow effect */
+  background-color: #f4b953;
+}
+
+.special-h2 {
+  color: #002541;
+  justify-content: center;
+  margin-top: 5px;
+  text-align: center;
+  box-shadow: 0px 0px 10px 2px #f4b953b5; /* Adjust this value to get the desired shadow effect */
+  background-color: #f4b953;
+}

@@ -13538,14 +13538,13 @@ pre .code {
 }
 
 .flex-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  /* Add shadows */
   border-radius: 5px;
-  /* Add rounded corners for a slight bevel effect */
   margin: 10px;
-  /* Add some margin between the tiles */
   transition: 0.3s;
-  /* Add transition for hover effect */
   background-color: #f4b953;
 }
 
@@ -13555,7 +13554,6 @@ pre .code {
 }
 
 .flex-item img {
-  padding: 20px; /* This applies the same padding to top, bottom, left, and right */
   object-fit: cover; /* This ensures the image covers the entire content box */
   width: 100%; /* This makes the image take up the full width of its container */
   height: auto; /* This allows the height to adjust automatically to maintain aspect ratio */
@@ -13624,6 +13622,7 @@ pre .code {
 }
 
 .special-h {
+  font-size: calc(30px + (35 - 20) * ((100vw - 300px) / (1300 - 300)));
   color: #002541;
   margin-top: 95px;
   text-align: center;
@@ -13632,6 +13631,7 @@ pre .code {
 }
 
 .special-h2 {
+  font-size: calc(30px + (35 - 20) * ((100vw - 300px) / (1300 - 300)));
   color: #002541;
   justify-content: center;
   margin-top: 5px;
@@ -13640,3 +13640,21 @@ pre .code {
   background-color: #f4b953;
 }
 
+.special-h3
+{
+  font-size: calc(18px + (35 - 20) * ((100vw - 300px) / (1300 - 300)));
+}
+
+@media (max-width: 767px) {
+  /* CSS for mobile devices */
+  img {
+    padding: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  /* CSS for desktop devices */
+  img {
+    padding: 20px;
+  }
+}

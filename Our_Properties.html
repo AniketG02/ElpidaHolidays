@@ -82,6 +82,17 @@
                 $('#modalInfo').html('<br>' + description + '<br><br>' + '</div><li><strong>No of Rooms:</strong> ' + noOfRooms + '</li><li><strong>No of Halls:</strong> ' + noOfHalls + '</li><li><strong>Facilities:</strong> <ul>' + facilitiesList + '</ul></li>');
                 $('#myModal').modal('show');
             }
+
+            function showModalForVillas(villaName, imageUrl, description, noOfPacks, facilities, note) {
+                $('#modalTitle').text(villaName);
+                $('#modalImage').attr('src', imageUrl);
+                var facilitiesList = facilities.map(function (facility) {
+                    return '<li>' + facility + '</li>';
+                }).join('');
+                $('#modalInfo').html('<br>' + description + '<br><br>' + '</div><li><strong>No of Packs:</strong> ' + noOfPacks + '</li><li><strong>Facilities:</strong> <ul>' + facilitiesList + '</ul></li><li><strong>Note:</strong> ' + note + '</li>');
+                $('#myModal').modal('show');
+            }
+
         </script>
 
     </nav><!-- End of Page Navbar -->
@@ -152,42 +163,22 @@
         <!-- Add your villa details here -->
         <section class="hotel">
             <h1 class="special-h2">Our Partnered Villas</h1>
+
             <div class="flex-container">
                 <div class="flex-item">
-                    <img src="https://r1imghtlak.mmtcdn.com/759b0bba293811e980410242ac110003.jpeg?&output-quality=75&downsize=910:612&crop=910:612;3,0&output-format=jpg"
-                        alt="Basilica Holiday Home">
-                    <h2>Basilica Holiday Home</h2>
+                    <img class="imgvilla" src="./assets/imgs/villas/3bhk-cover.jpg" alt="Tranquil Villa Lonavala">
+                    <h2>Tranquil Villa Lonavala</h2>
                     <button type="button" class="btn" data-toggle="modal" data-target="#myModal"
-                        onclick="showModal('Basilica Holiday Home', 'https://r1imghtlak.mmtcdn.com/759b0bba293811e980410242ac110003.jpeg?&output-quality=75&downsize=910:612&crop=910:612;3,0&output-format=jpg', 'Basilica Holiday Home in Lonavala offers serene accommodations nestled amidst nature, providing tranquility and comfort for a memorable getaway experience.', '46', '3(Max capacity Upto 400 in theater)', ['Spacious Rooms', 'Swimming Pool', 'Lawn for wedding and events', 'Ample car parking', 'Restaurant'])">More
+                        onclick="showModalForVillas('Tranquil Villa Lonavala', './assets/imgs/villas/3bhk.jpg', 'Tranquil Villa is a luxurious 3 BHK retreat nestled amidst nature. With contemporary design and premium interiors, it offers spacious living areas, elegant bedrooms, and a serene outdoor oasis with landscaped gardens and a pool. Conveniently located, it provides a perfect balance of tranquility and accessibility for discerning homeowners.', '12 + 3', ['Spacious Rooms', 'Swimming Pool', 'Lawn for wedding and events', 'Ample car parking', 'Restaurant'], 'Extra person rates will be applicable.')">More
                         Info</button>
                 </div>
 
                 <div class="flex-item">
-                    <img src="https://lh3.googleusercontent.com/p/AF1QipPLTbUke2GQp9F8Ad-vxAXUvPPHpqBm_9CXzS6I=s1360-w1360-h1020"
-                        alt="Ellegance Hill Resort">
-                    <h2>Ellegance Hill Resort</h2>
+                    <img class="imgvilla" src="./assets/imgs/villas/4bhk-cover.jpg" alt="Kings Villa Lonavala" >
+                    <h2>Kings Villa Lonavala</h2>
                     <button type="button" class="btn" data-toggle="modal" data-target="#myModal"
-                        onclick="showModal('Ellegance Hill Resort', 'https://lh3.googleusercontent.com/p/AF1QipPLTbUke2GQp9F8Ad-vxAXUvPPHpqBm_9CXzS6I=s1360-w1360-h1020', 'Ellegance Hill Resort in Lonavala offers tranquil luxury amidst nature, featuring scenic views, comfortable accommodations, and premium amenities for a rejuvenating retreat.', '30', '2(Max capacity Upto 150 in theater)', ['Restaurant','Swimming Pool', 'Well Equiped Rooms', 'Indoor Games','Children Play Area','Ample car parking','Lawn for wedding (Upto 600 packs)'])">More
+                        onclick="showModalForVillas('Kings Villa Lonavala', './assets/imgs/villas/4bhk.jpg', 'Experience opulent living in \'Kings\' villa, boasting a lavish 4-bedroom, grand residence. This exquisite abode combines modern luxury with timeless elegance, offering spacious living areas, state-of-the-art amenities, and meticulously crafted interiors. Nestled in serene surroundings, \'Kings\' invites you to indulge in a lifestyle of unparalleled comfort and sophistication.', '12 + 8', ['Spacious Rooms', 'Swimming Pool', 'Lawn for wedding and events', 'Ample car parking', 'Restaurant'], 'Extra person rates will be applicable.')">More
                         Info</button>
-                </div>
-        
-                <div class="modal fade" id="myModal">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title" id="modalTitle">Hotel Name</h4>
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            </div>
-                            <div class="modal-body">
-                                <img id="modalImage" src="hotel-image.jpg" alt="Hotel Image" style="display: block;">
-                                <ul id="modalInfo" class="center-text">
-                                </ul>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
